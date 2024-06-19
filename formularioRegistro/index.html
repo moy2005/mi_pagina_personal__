@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="cod-container">
+        <div class="form-header">
+            <h1>Formulario d<span>e Registro</span></h1>
+        </div>
+
+        <div class="form-content">
+            <form action="#" class="cod-form">
+                <div class="form-title">
+                    <h3>Registrarse</h3>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-input" name="form-input" id="usuario" pattern="^[a-zA-Z0-9]{5,15}$"
+                    title="Debe de contener entre 5 y 15 caracteres alfanuméricos" required>
+                    <label class="label" for="usuario">Nombre de usuario</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-input" name="form-input" id="pass" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$!@#%*?&_])[A-Za-z\d$!@#%*?&]{8,}$"
+                    title="Debe tener al menos 8 caracteres, incluyendo al menos una letra mayúscula, 
+                    una minúscula, un número y un carácter especial (!, @, #, etc.)" required>
+                    <label class="label" for="pass">Contraseña</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" class="form-input" name="form-input" id="correo" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Ingrese una dirección de correo electrónico valida" required>
+                    <label class="label" for="correo">Correo</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" class="form-input" name="form-input" id="telefono" pattern="^\+[0-9]{1,15}$"
+                    title="Debe seguir el formato internacional, comenzando con el signo + y hasta 15 digitos" required>
+                    <label class="label" for="tel">Número de Teléfono</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="date" class="form-input" name="form-input" id="date" pattern="^\d{4}-\d{2}-\d{2}$"
+                    title="Debe estar en el formato YYYY-MM-DD" required>
+                    <label class="label" for="tel">Fecha de Nacimiento</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" class="form-input" name="form-input" id="codigo" pattern="^\d{5}$"
+                    title="Debe consistir en exactamente 5 digitos"  required>
+                    <label class="label" for="tel">Código Postal</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="submit" class="form-input" value="Registrarse">
+                </div>
+               
+            </form>
+        </div>
+</body>
+</html>
